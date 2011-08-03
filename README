@@ -1,0 +1,13 @@
+RabbitMQ Cloud Foundry Samples
+==============================
+
+This repository contains sample applications to demonstrate the use of
+the RabbitMQ service on Cloud Foundry
+(<http://www.cloudfoundry.com/>).
+
+You can find further sample applications at
+<https://github.com/SpringSource/cloudfoundry-samples>.  Not all of
+the applications there use the RabbitMQ service, but some do.
+
+If you have any questions about these samples or the service, please
+contact us at <cloudfoundry@rabbitmq.com>.
