@@ -1,0 +1,32 @@
+<h1>Rabbit On Rails</h1>
+
+<h2>Publish a message</h2>
+
+<%= h(flash[:url] || "") %>
+
+<% form_tag({:controller => "home", :action => "publish"}, :method => "post") do %>
+  <%= label_tag(:message, "Message to publish:") %>
+  <%= text_field_tag(:message) %>
+  <%= submit_tag("Publish") %>
+<% end %>
+
+<% if flash[:published] %>
+  <p>Published a message!</p>
+<% end %>
+
+<h2>Get a message</h2>
+
+<% form_tag({:controller => "home", :action => "get"}, :method => "post") do %>
+  <%= submit_tag("Get one") %>
+<% end %>
+
+<% if flash[:got] %>
+  <p>
+    <% case flash[:got]
+       when :queue_empty %>
+      Queue empty
+    <% else %>
+      Got message: <%= flash[:got] %>
+    <% end %>
+  </p>
+<% end %>

@@ -1,0 +1,150 @@
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Fri Jul 29 13:40:28 +0100 2011
+  Processing by HomeController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70141347790780_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:7)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70141347790780_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:19)
+Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Jul 29 13:40:31 +0100 2011
+  Processing by HomeController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70141308117240_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:7)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70141308117240_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:19)
+Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/get" for 127.0.0.1 at Fri Jul 29 13:40:33 +0100 2011
+  Processing by HomeController#get as HTML
+  Parameters: {"commit"=>"Get one", "authenticity_token"=>"Dlm2Zj97iixZZahjcrdeDitM8tQ20T1MsZecuPqU140=", "utf8"=>"\342\234\223"}
+Completed 500 Internal Server Error in 10053ms
+
+Bunny::ServerDownError (execution expired):
+  app/controllers/home_controller.rb:73:in `get'
+
+Rendered /home/dwragg/rubygems/gems/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (38.0ms)
+Rendered /home/dwragg/rubygems/gems/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+Rendered /home/dwragg/rubygems/gems/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.8ms)
+
+
+Started POST "/publish" for 127.0.0.1 at Fri Jul 29 13:41:55 +0100 2011
+  Processing by HomeController#publish as HTML
+  Parameters: {"commit"=>"Publish", "authenticity_token"=>"Dlm2Zj97iixZZahjcrdeDitM8tQ20T1MsZecuPqU140=", "utf8"=>"\342\234\223", "message"=>"12345"}
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 14ms
+
+
+Started GET "/home/index" for 127.0.0.1 at Fri Jul 29 13:41:55 +0100 2011
+  Processing by HomeController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70141307640780_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:7)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70141307640780_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:19)
+Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/get" for 127.0.0.1 at Fri Jul 29 13:41:57 +0100 2011
+  Processing by HomeController#get as HTML
+  Parameters: {"commit"=>"Get one", "authenticity_token"=>"Dlm2Zj97iixZZahjcrdeDitM8tQ20T1MsZecuPqU140=", "utf8"=>"\342\234\223"}
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 15ms
+
+
+Started GET "/home/index" for 127.0.0.1 at Fri Jul 29 13:41:57 +0100 2011
+  Processing by HomeController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70141308304800_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:7)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70141308304800_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:19)
+Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/get" for 127.0.0.1 at Fri Jul 29 13:41:58 +0100 2011
+  Processing by HomeController#get as HTML
+  Parameters: {"commit"=>"Get one", "authenticity_token"=>"Dlm2Zj97iixZZahjcrdeDitM8tQ20T1MsZecuPqU140=", "utf8"=>"\342\234\223"}
+Completed 500 Internal Server Error in 10014ms
+
+Bunny::ServerDownError (execution expired):
+  app/controllers/home_controller.rb:73:in `get'
+
+Rendered /home/dwragg/rubygems/gems/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /home/dwragg/rubygems/gems/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /home/dwragg/rubygems/gems/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started POST "/get" for 127.0.0.1 at Fri Jul 29 14:43:49 +0100 2011
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /home/dwragg/work/vmware/ac/rabbit-on-rails/app/controllers/application_controller.rb:1)
+  Processing by HomeController#get as HTML
+  Parameters: {"commit"=>"Get one", "authenticity_token"=>"Dlm2Zj97iixZZahjcrdeDitM8tQ20T1MsZecuPqU140=", "utf8"=>"\342\234\223"}
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 10053ms
+
+
+Started GET "/home/index" for 127.0.0.1 at Fri Jul 29 14:44:00 +0100 2011
+  Processing by HomeController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_69954454815860_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:7)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_69954454815860_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:19)
+Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/get" for 127.0.0.1 at Fri Jul 29 14:44:04 +0100 2011
+  Processing by HomeController#get as HTML
+  Parameters: {"commit"=>"Get one", "authenticity_token"=>"Dlm2Zj97iixZZahjcrdeDitM8tQ20T1MsZecuPqU140=", "utf8"=>"\342\234\223"}
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 10016ms
+
+
+Started GET "/home/index" for 127.0.0.1 at Fri Jul 29 14:44:14 +0100 2011
+  Processing by HomeController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_69954455809620_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:7)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_69954455809620_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:19)
+Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/publish" for 127.0.0.1 at Fri Jul 29 15:08:36 +0100 2011
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /home/dwragg/work/vmware/ac/rabbit-on-rails/app/controllers/application_controller.rb:1)
+  Processing by HomeController#publish as HTML
+  Parameters: {"commit"=>"Publish", "authenticity_token"=>"Dlm2Zj97iixZZahjcrdeDitM8tQ20T1MsZecuPqU140=", "utf8"=>"\342\234\223", "message"=>"9876543"}
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 43ms
+
+
+Started GET "/home/index" for 127.0.0.1 at Fri Jul 29 15:08:37 +0100 2011
+  Processing by HomeController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70174776225820_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:7)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70174776225820_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:19)
+Rendered home/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/get" for 127.0.0.1 at Fri Jul 29 15:08:38 +0100 2011
+  Processing by HomeController#get as HTML
+  Parameters: {"commit"=>"Get one", "authenticity_token"=>"Dlm2Zj97iixZZahjcrdeDitM8tQ20T1MsZecuPqU140=", "utf8"=>"\342\234\223"}
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 14ms
+
+
+Started GET "/home/index" for 127.0.0.1 at Fri Jul 29 15:08:38 +0100 2011
+  Processing by HomeController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70174777232260_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:7)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70174777232260_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:19)
+Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/get" for 127.0.0.1 at Fri Jul 29 15:08:40 +0100 2011
+  Processing by HomeController#get as HTML
+  Parameters: {"commit"=>"Get one", "authenticity_token"=>"Dlm2Zj97iixZZahjcrdeDitM8tQ20T1MsZecuPqU140=", "utf8"=>"\342\234\223"}
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 10015ms
+
+
+Started GET "/home/index" for 127.0.0.1 at Fri Jul 29 15:08:50 +0100 2011
+  Processing by HomeController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70174776172040_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:7)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_home_index_html_erb__1017930344_70174776172040_0 at /home/dwragg/work/vmware/ac/rabbit-on-rails/app/views/home/index.html.erb:19)
+Rendered home/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
