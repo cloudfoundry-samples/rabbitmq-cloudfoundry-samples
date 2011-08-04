@@ -1,0 +1,25 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    bunny (0.7.4)
+    daemons (1.1.3)
+    eventmachine (0.12.10)
+    json (1.5.3)
+    rack (1.3.2)
+    sinatra (1.2.6)
+      rack (~> 1.1)
+      tilt (< 2.0, >= 1.2.2)
+    thin (1.2.11)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+    tilt (1.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bunny
+  json
+  sinatra
+  thin

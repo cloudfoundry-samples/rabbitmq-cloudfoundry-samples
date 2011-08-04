@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Rabbit Sinatra Sample</title>
+  </head>
+  <body>
+    <h1>Rabbit Sinatra Sample</h1>
+
+    <h2>Publish a message</h2>
+
+    <form action="/publish" method="POST">
+      <label for="message">Message to publish:</label>
+      <input name="message" type="text" />
+      <input type="submit" value="Publish"/>
+    </form>
+
+    <% if @published %>
+      <p>Published a message!</p>
+    <% end %>
+
+    <h2>Get a message</h2>
+
+    <form action="/get" method="POST">
+      <input type="submit" value="Get one"/>
+    </form>
+
+    <% if @got %>
+      <p>
+        <% case @got
+           when :queue_empty %>
+          Queue empty
+        <% else %>
+          Got message: <%= CGI.escapeHTML(@got) %>
+        <% end %>
+      </p>
+    <% end %>
+  </body>
+</html>
+
