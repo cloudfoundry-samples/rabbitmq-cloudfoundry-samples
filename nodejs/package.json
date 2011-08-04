@@ -1,0 +1,11 @@
+{
+
+  "name":"node-srs-demo",
+  "author": "Michael Bridgen",
+  "version":"0.0.2",
+  "dependencies":{
+    "amqp":">= 0.1.0",
+    "sanitizer": "*"
+  }
+
+}
