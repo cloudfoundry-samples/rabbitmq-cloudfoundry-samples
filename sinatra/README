@@ -1,2 +1,2 @@
-This is a very simple Rails 3 application demonstrating the use of the
+This is a very simple Sinatra application demonstrating the use of the
 RabbitMQ service on Cloud Foundry.
