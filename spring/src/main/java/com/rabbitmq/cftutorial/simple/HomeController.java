@@ -19,14 +19,16 @@ public class HomeController {
 
     @RequestMapping(value = "/publish", method=RequestMethod.POST)
     public String publish(Model model, Message message) {
-        amqpTemplate.convertAndSend(message.getValue());
+        // Send a message to the "messages" queue
+        amqpTemplate.convertAndSend("messages", message.getValue());
         model.addAttribute("published", true);
         return home(model);
     }
 
     @RequestMapping(value = "/get", method=RequestMethod.POST)
     public String get(Model model) {
-        String message = (String)amqpTemplate.receiveAndConvert();
+        // Receive a message from the "messages" queue
+        String message = (String)amqpTemplate.receiveAndConvert("messages");
         if (message != null)
             model.addAttribute("got", message);
         else
