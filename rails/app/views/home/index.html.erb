@@ -2,8 +2,6 @@
 
 <h2>Publish a message</h2>
 
-<%= h(flash[:url] || "") %>
-
 <% form_tag({:controller => "home", :action => "publish"}, :method => "post") do %>
   <%= label_tag(:message, "Message to publish:") %>
   <%= text_field_tag(:message) %>
