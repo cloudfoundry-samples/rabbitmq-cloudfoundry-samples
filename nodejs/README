@@ -1,7 +1,0 @@
-This is a simple Node.JS application demonstrating the use of the
-RabbitMQ service on Cloud Foundry.
-
-To run locally:
-
-    $ npm install
-    $ node app.js

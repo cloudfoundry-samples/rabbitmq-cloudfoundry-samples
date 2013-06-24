@@ -1,6 +1,5 @@
 {
-
-  "name":"node-srs-demo",
+  "name":"rabbitmq-node",
   "author": "Michael Bridgen",
   "version":"0.0.2",
   "dependencies":{

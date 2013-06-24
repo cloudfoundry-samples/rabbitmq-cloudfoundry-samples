@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.rabbitmq.cftutorial</groupId>
-  <artifactId>simple</artifactId>
+  <artifactId>rabbitmq-spring</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>cftutorial-simple</name>
+  <name>rabbitmq-spring</name>
   <description>Simple Cloud Foundry Tutorial Application</description>
 
   <properties>
@@ -45,7 +45,7 @@
       <dependency>
           <groupId>org.cloudfoundry</groupId>
           <artifactId>cloudfoundry-runtime</artifactId>
-          <version>0.7.1</version>
+          <version>0.8.4</version>
       </dependency>
 
       <dependency>

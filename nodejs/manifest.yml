@@ -1,0 +1,13 @@
+---
+applications:
+- name: rabbitmq-node
+  memory: 256M
+  instances: 1
+  url: rabbitmq-node.${target-base}
+  path: .
+  services:
+    rabbit-sample:
+      label: cloudamqp
+      provider: cloudamqp
+      version: n/a
+      plan: lemur
