@@ -13,8 +13,8 @@ class HomeController < ApplicationController
     services = JSON.parse(ENV['VCAP_SERVICES'], :symbolize_names => true)
     url = services.values.map do |srvs|
       srvs.map do |srv|
-        if srv[:label] =~ /^rabbitmq-/
-          srv[:credentials][:url]
+        if srv[:credentials][:uri] =~ /^amqp/
+          srv[:credentials][:uri]
         else
           []
         end

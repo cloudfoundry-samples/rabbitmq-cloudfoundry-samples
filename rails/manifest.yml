@@ -1,0 +1,13 @@
+---
+applications:
+- name: rabbitmq-rails
+  memory: 256M
+  instances: 1
+  url: rabbitmq-rails.${target-base}
+  path: .
+  services:
+    rabbit-rails:
+      label: cloudamqp
+      provider: cloudamqp
+      version: n/a
+      plan: lemur

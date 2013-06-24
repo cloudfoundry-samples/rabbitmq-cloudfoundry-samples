@@ -1,6 +1,0 @@
-This is a very simple Rails 3 application demonstrating the use of the
-RabbitMQ service on Cloud Foundry.
-
-See
-<http://support.cloudfoundry.com/entries/20334591-getting-started-with-the-rabbitmq-service-from-a-rails-application>
-for a tutorial corresponding to this application.

@@ -1,6 +1,0 @@
-This is a very simple Spring application demonstrating the use of the
-RabbitMQ service on Cloud Foundry.
-
-See
-<http://support.cloudfoundry.com/entries/20322602-getting-started-with-the-rabbitmq-service-from-a-spring-application>
-for a tutorial corresponding to this application.
