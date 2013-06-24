@@ -1,5 +1,3 @@
-require.paths.unshift('./node_modules');
-
 var http = require('http');
 var amqp = require('amqp');
 var URL = require('url');
@@ -7,8 +5,17 @@ var htmlEscape = require('sanitizer/sanitizer').escape;
 
 function rabbitUrl() {
   if (process.env.VCAP_SERVICES) {
-    conf = JSON.parse(process.env.VCAP_SERVICES);
-    return conf['rabbitmq-2.4'][0].credentials.url;
+    var svcInfo = JSON.parse(process.env.VCAP_SERVICES);
+    for (var label in svcInfo) {
+      var svcs = svcInfo[label];
+      for (var index in svcs) {
+        var uri = svcs[index].credentials.uri;
+        if (uri.lastIndexOf("amqp", 0) == 0) {
+          return uri;
+        }
+      }
+    }
+    return null;
   }
   else {
     return "amqp://localhost";
