@@ -3,7 +3,7 @@ applications:
 - name: rabbitmq-spring
   memory: 512M
   instances: 1
-  url: rabbitmq-spring.${target-base}
+  host: rabbitmq-spring-${target-base}
   path: target/rabbitmq-spring-1.0-SNAPSHOT.war
   services:
     rabbit-sample:
