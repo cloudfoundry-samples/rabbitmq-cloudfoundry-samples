@@ -3,7 +3,7 @@ applications:
 - name: rabbitmq-rails
   memory: 256M
   instances: 1
-  url: rabbitmq-rails.${target-base}
+  host: rabbitmq-rails-${random-word}
   path: .
   services:
     rabbit-rails:

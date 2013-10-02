@@ -3,7 +3,7 @@ applications:
 - name: rabbitmq-node
   memory: 256M
   instances: 1
-  url: rabbitmq-node.${target-base}
+  host: rabbitmq-node-${random-word}
   path: .
   services:
     rabbit-sample:
