@@ -17,7 +17,7 @@
     <cloud:rabbit-connection-factory id="connectionFactory"/>
 
     <!-- Set up the AmqpTemplate/RabbitTemplate: -->
-    <rabbit:template connection-factory="connectionFactory"/>
+    <rabbit:template id="amqpTemplate" connection-factory="connectionFactory"/>
 
     <!-- Request that queues, exchanges and bindings be automatically
          declared on the broker: -->
