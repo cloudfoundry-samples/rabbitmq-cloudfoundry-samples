@@ -3,7 +3,7 @@ applications:
 - name: rabbitmq-sinatra
   memory: 256M
   instances: 1
-  host: rabbitmq-sinatra-${random-word}
+  host: rabbitmq-sinatra-banana
   path: .
   services:
     rabbit-sinatra:
